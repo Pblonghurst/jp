@@ -1,0 +1,13 @@
+.social-cards {
+    background-color: $white;
+    padding: 64px 0 96px 0;
+    h2 {
+        color: $accent;
+        margin: 0 0 64px;
+    }
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

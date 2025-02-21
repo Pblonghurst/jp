@@ -1,0 +1,81 @@
+body {
+    background-color: $c1;
+    margin: 0;
+    padding: 0;
+    font-family: "Commissioner", sans-serif;
+}
+
+p {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    font-size: 16px;
+    border: none;
+}
+
+img {
+    object-fit: cover;
+}
+
+h1 {
+    margin: 0;
+    font-family: "Commissioner", sans-serif; 
+    font-size: 32px;
+    color: $white;
+    font-weight: 300;
+    span {
+        font-family: "Analogue", serif; 
+        font-size: 96px;
+        color: $accent;
+        font-weight: 400;
+    }
+}
+ h2 {
+    font-size: 32px;
+    margin: 0;
+ }
+ h3 {
+    font-size: 24px;
+    margin: 0;
+ }
+
+a {
+    font-size: 16px;
+    text-decoration: none;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    width: 100%;
+    padding: 0 32px;
+    &.jc-sb {
+        justify-content: space-between;
+    }
+    &.ai-c {
+        align-items: center;
+    }
+    &.ai-fe {
+        align-items: flex-end;
+    }
+    &.jc-fe {
+        justify-content: flex-end;
+    }
+    &.jc-c {
+        justify-content: center;
+    }
+    &.fd-c {
+        flex-direction: column;
+    }
+    &.center {
+        align-items: center;
+        justify-content: center;
+    }
+}

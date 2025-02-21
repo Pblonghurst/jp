@@ -1,0 +1,14 @@
+.button-basic {
+    padding: 10px 26px;
+    background-color: $accent;
+    border-radius: 16px;
+    color: $white;
+    font-weight: 700;
+    transition: 0.3s;
+    &:hover {
+        color: $accent;
+        background-color: $white;
+        transition: 0.3s;
+        cursor: pointer;
+    }
+}
