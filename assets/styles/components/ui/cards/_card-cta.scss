@@ -1,0 +1,22 @@
+.card-cta {
+    border-radius: 16px;
+    overflow: hidden;
+    img {
+        background-color: $accent;
+        height: 183px;
+        width: 100%;
+    }
+    &__text {
+        background-color: $white;
+        padding: 16px 42px;
+        h3 {
+            margin: 0 0 16px 0;
+            font-size: 20px;
+            text-align: center;
+        }
+        button {
+            margin: 0 auto;
+            display: block;
+        }
+    }
+}

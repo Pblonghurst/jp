@@ -1,6 +1,8 @@
 <template lang="">
     <NuxtLink :to=link>
-        <button class="button-basic">
+        <button class="button-basic"
+            :class="{ light: light, dark: dark }"
+        >
             {{ name }}
         </button>
     </NuxtLink>
@@ -11,7 +13,9 @@ export default {
     name: "ButtonBasic",
     props: {
         name: String,
-        link: String
+        link: String,
+        light: Boolean,
+        dark: Boolean
     }
 }
 </script>

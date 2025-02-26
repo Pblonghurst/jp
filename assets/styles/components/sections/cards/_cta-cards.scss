@@ -1,0 +1,8 @@
+.cta-cards {
+    padding: 46px 0;
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 32px;
+    }
+}

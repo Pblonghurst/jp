@@ -5,10 +5,33 @@
     color: $white;
     font-weight: 700;
     transition: 0.3s;
+    font-family: "Montserrat";
+    font-weight: 500;
+    border: 3px solid $accent;
+    white-space: nowrap;
     &:hover {
         color: $accent;
         background-color: $white;
         transition: 0.3s;
         cursor: pointer;
+    }
+    &.light {
+        border: 3px solid $accent;
+        background-color: $white;
+        color: $accent;
+        &:hover {
+            color: $white;
+            background-color: $accent;
+            transition: 0.3s;
+        }
+    }
+    &.dark {
+        border: 3px solid $accent;
+        background-color: $c4;
+        color: $white;
+        &:hover {
+            background-color: $accent;
+            transition: 0.3s;
+        }
     }
 }

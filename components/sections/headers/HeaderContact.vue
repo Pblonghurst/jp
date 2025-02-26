@@ -7,10 +7,10 @@
                     <span>Aether</span>
                 </h1>
                 <p>
-                    Need a website designed and developed? Or need any of our other services? We can help. 
+                    Need a website designed and developed? Or need any of our other services? We can help.<br><br> 
                     Either fill out the form with your details and a message and we will get in touch, or find the button below to schedule in a call with us, where we can discuss your idea for free.
                 </p>
-                <ButtonBasic name="hello" />
+                <ButtonBasic name="Book a Call" :dark=true />
             </div>
 
             <div class="header-contact__left">
