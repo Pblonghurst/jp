@@ -5,6 +5,7 @@
                 <h1>
                     Studio
                     <span>Aether</span>
+                    <div class="underline"></div>
                 </h1>
                 <img />
             </div>

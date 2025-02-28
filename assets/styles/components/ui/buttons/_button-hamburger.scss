@@ -1,0 +1,112 @@
+.button-hamburger {
+    @media (min-width: $tablet) {
+        display: none;
+    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 12px;
+    .burger {
+        background-color: transparent;
+        width: 44px;
+        height: 44px;
+        padding: 3px;
+        cursor: pointer;
+        span {
+            width: 28px;
+            height: 4px;
+            display: block;
+            background-color: #eee;
+            border-radius: 2px;
+            margin: 6px auto;
+        }
+        // burger lines
+         &:nth-child(1).toggle span:nth-child(1) {
+            animation: span1-1 0.5s 1 both;
+        }
+        &:nth-child(1).toggle span:nth-child(2) {
+            animation: span1-2 0.5s 1 both;
+        }
+        &:nth-child(1).toggle span:nth-child(3) {
+            animation: span1-3 0.5s 1 both;
+        }
+        &:nth-child(1).untoggle span:nth-child(1) {
+            animation: span1-1re 0.5s 1 both;
+        }
+        &:nth-child(1).untoggle span:nth-child(2) {
+            opacity: 0;
+            animation: span1-2re 0.5s 1 both;
+        }
+        &:nth-child(1).untoggle span:nth-child(3) {
+            animation: span1-3re 0.5s 1 both;
+        }
+        // burger animation keyframes
+        @keyframes span1-1 {
+            0% {
+            transform: translateY(0px);
+            }
+            50% {
+            transform: translateY(10px);
+            }
+            100% {
+            transform: translateY(10px) rotate(45deg);
+            }
+        }
+        @keyframes span1-2 {
+            49% {
+            opacity: 1;
+            }
+            50% {
+            opacity: 0;
+            }
+            100% {
+            opacity: 0;
+            }
+        }
+        @keyframes span1-3 {
+            0% {
+            transform: translateY(0px);
+            }
+            50% {
+            transform: translateY(-10px);
+            }
+            100% {
+            transform: translateY(-10px) rotate(-45deg);
+            }
+        }
+        @keyframes span1-1re {
+            0% {
+            transform: translateY(10px) rotate(45deg);
+            }
+            50% {
+            transform: translateY(10px);
+            }
+            100% {
+            transform: translateY(0px);
+            }
+        }
+        @keyframes span1-2re {
+            50% {
+            opacity: 0;
+            }
+            51% {
+            opacity: 1;
+            }
+            100% {
+            opacity: 1;
+            }
+        }
+        @keyframes span1-3re {
+            0% {
+            transform: translateY(-10px) rotate(-45deg);
+            }
+            50% {
+            transform: translateY(-10px);
+            }
+            100% {
+            transform: translateY(0px);
+            }
+        }
+    }
+}

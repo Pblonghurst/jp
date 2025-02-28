@@ -1,6 +1,7 @@
 <template lang="">
     <div class="cta-cards">
-        <div class="container fd-c">
+        <div class="container">
+            <LineOne />
             <div class="cta-cards__wrapper">
                 <CardCta title="Full Website Build" text=""/>
                 <CardCta title="Full Website Build"/>

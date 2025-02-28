@@ -9,6 +9,7 @@
         display: flex;
         grid-gap: 90px;
         width: 100%;
+        flex-wrap: wrap;
         &__text { 
             max-width: 391px;
             h2 {
@@ -17,7 +18,7 @@
         }
         &__form {
             background-color: $c1;
-            width: 100%;
+            
         }
     }
 }

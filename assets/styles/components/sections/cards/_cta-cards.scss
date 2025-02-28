@@ -1,8 +1,20 @@
 .cta-cards {
     padding: 46px 0;
+    .container {
+        display: block;
+    }
+    svg {
+        width: 100%;
+        @media (max-width: $tablet) { 
+            display: none;
+        }
+    }
     &__wrapper {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-gap: 32px;
+        grid-template-columns: repeat(auto-fit, minmax(251px, 1fr));
+        gap: 32px;
+        align-items: start; // Prevents stretching
+        grid-auto-rows: min-content; 
+        overflow: hidden;
     }
 }
