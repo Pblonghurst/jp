@@ -14,21 +14,44 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        @media (max-width: $tablet) {
+            justify-content: center;
+            text-align: center;
+            button {
+                display: none;
+            }
+        }
     }
     &__bot {
         background-color: $white;
         padding: 21px 30px 32px 30px;
         display: flex;
         align-items: center;
-        grid-gap: 38px;
+        gap: 38px;
+        @media (max-width: $tablet) {
+            flex-direction: column;
+            padding: 24px;
+            gap: 24px;
+        }
         p {
             max-width: 448px;
+            @media (max-width: $tablet) {
+                text-align: center;
+            }
         }
         img {
             background-color: $accent;
             width: 214px;
             height: 183px;
             border-radius: 16px;
+            @media (max-width: $tablet) {
+                display: none;
+            }
+        }
+        div {
+            @media (min-width: $tablet) {
+                display: none;
+            }
         }
     }
 }

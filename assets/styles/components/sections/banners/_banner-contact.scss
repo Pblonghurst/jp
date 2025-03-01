@@ -10,15 +10,25 @@
         grid-gap: 90px;
         width: 100%;
         flex-wrap: wrap;
+        overflow: hidden;
         &__text { 
             max-width: 391px;
+            position: relative;
             h2 {
                 margin: 0 0 48px 0;
             }
         }
         &__form {
             background-color: $c1;
-            
+            color: $accent;
+        }
+        .underline {
+            right: 0;
+            transform: translateY(16px);
+            background-color: $white;
+            &::after {
+                background-color: $white;
+            }
         }
     }
 }

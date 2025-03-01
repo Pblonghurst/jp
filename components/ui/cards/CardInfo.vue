@@ -7,6 +7,9 @@
         <div class="card-info__bot">
             <img />
             <p>{{ text }}</p>
+            <div>
+                <ButtonBasic name="Book a Call"/>
+            </div>
         </div>
     </div>
 </template>

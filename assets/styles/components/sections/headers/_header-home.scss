@@ -44,22 +44,7 @@
                 }
             }
             .underline {
-                width: 1920px;
-                position: absolute;
                 right: -50px;
-                height: 3px;
-                background-color: $accent;
-                &::after {
-                    content: '';
-                    width: 14px;
-                    height: 14px;
-                    display: block;
-                    background-color: $accent;
-                    border-radius: 50%;
-                    position: absolute;
-                    right: 0;
-                    top: -5.5px;
-                }
                 @media (max-width: $tablet) { 
                     right: 0px;
                 }

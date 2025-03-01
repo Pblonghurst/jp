@@ -23,17 +23,41 @@ img {
     object-fit: cover;
 }
 
+.underline {
+    width: 1920px;
+    position: absolute;
+    height: 3px;
+    background-color: $accent;
+    &::after {
+        content: '';
+        width: 14px;
+        height: 14px;
+        display: block;
+        background-color: $accent;
+        border-radius: 50%;
+        position: absolute;
+        right: 0;
+        top: -5.5px;
+    }
+}
+
 h1 {
     margin: 0;
     font-family: "Commissioner", sans-serif; 
     font-size: 32px;
     color: $white;
     font-weight: 300;
+    @media (max-width: $tablet) {
+        font-size: 16px;
+    }
     span {
         font-family: "Analogue", serif; 
         font-size: 96px;
         color: $accent;
         font-weight: 400;
+        @media (max-width: $tablet) {
+            font-size: 64px;
+        }
     }
 }
  h2 {
@@ -41,6 +65,9 @@ h1 {
     margin: 0;
     font-family: "Commissioner", sans-serif; 
     font-weight: 600;
+    @media (max-width: $tablet) {
+        font-size: 28px;
+    }
  }
  h3 {
     font-size: 24px;

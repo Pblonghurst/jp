@@ -11,7 +11,7 @@
                 <!-- hamburger menu -->
                 <ButtonHamburger @burger-click="onBurgerClick"/>
             </div>
-        </div>
+        </div> 
         <div class="links links-mob"
         :class="{'open': !isOpen}"
         >

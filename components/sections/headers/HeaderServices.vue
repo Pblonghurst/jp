@@ -4,6 +4,7 @@
             <h1>
                 Our
                 <span>Services</span>
+                <div class="underline"></div>
             </h1>
         </div>
     </div>

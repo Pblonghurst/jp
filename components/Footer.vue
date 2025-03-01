@@ -6,7 +6,7 @@
             <LogoFooter />
             <!-- links -->
             <NuxtLink to="services">Services</NuxtLink> 
-            <NuxtLink to="services">Contact</NuxtLink>
+            <NuxtLink to="contact">Contact</NuxtLink>
             <!-- socials -->
             <div class="footer__socials">
                 <LinkedIn />

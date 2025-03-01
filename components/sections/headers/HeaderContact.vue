@@ -5,6 +5,7 @@
                 <h1>
                     Studio
                     <span>Aether</span>
+                    <div class="underline"></div>
                 </h1>
                 <p>
                     Need a website designed and developed? Or need any of our other services? We can help.<br><br> 

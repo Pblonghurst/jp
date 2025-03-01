@@ -3,11 +3,9 @@
         <div class="container ai-c jc-c">
             <h2>Who will you be talking to?</h2>
         </div>
-        <div class="container fd-c jc-sb">
-            <div class="social-cards__items"> 
-                <CardSocial />
-                <CardSocial />
-            </div>
+        <div class="container jc-sb ai-c">
+            <CardSocial />
+            <CardSocial />
         </div>
     </div>
 </template>

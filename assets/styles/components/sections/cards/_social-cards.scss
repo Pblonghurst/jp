@@ -5,9 +5,7 @@
         color: $accent;
         margin: 0 0 64px;
     }
-    &__items {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+    .container:nth-child(2){
+        gap: 42px;
     }
 }
